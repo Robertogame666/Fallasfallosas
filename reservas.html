@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CineStar - Reservas</title>
+  <link rel="stylesheet" href="CSS/Index_Style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Double+Ink:wght@100..900&family=Bitcount+Prop+Single+Ink:wght@100..900&family=Playball&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <img src="IMG/Star.png" alt="Logo de CineStar">
+    <h1>CineStar</h1>
+    <nav class="menu">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="cartelera.html">Cartelera</a></li>
+        <li><a href="dulceria.html">Dulcerías</a></li>
+        <li><a href="novedades.html">Novedades</a></li>
+        <li><a href="salas-vip.html">Salas VIP</a></li>
+        <li><a href="reservas.html">Reservas</a></li>
+        <li><a href="Acerca_de_nosotros.html">Sobre Nosotros</a></li>
+      </ul>
+    </nav>
+    <form class="busqueda" action="#" method="get">
+      <input type="text" name="q" placeholder="Buscar película..." />
+      <button type="submit">🔍</button>
+    </form>
+
+  </header>
+  <section class="reservas">
+    <h2>Reservas de Salas</h2>
+    <p>
+      Agenda una sala privada para tu evento, función exclusiva o presentación especial.
+      Completa el formulario y un asesor se pondrá en contacto contigo.
+    </p>
+
+    <form class="reserva-form" action="" method="post">
+      <label> <!--"action" no hace nada, pero es para enviar los datos del formulario-->
+        Cine
+        <select name="cine" required> <!-- required manda el mensaje de error -->
+          <option value="">Selecciona sede</option>
+          <option>Metro Centro</option>
+          <option>La Gran Vía</option>
+          <option>Metro Centro San Miguel</option>
+        </select>
+      </label>
+
+      <label>
+        Sala
+        <select name="sala" required> <!--mensaje error-->
+          <option value="">Selecciona sala</option>
+          <option>Sala 1 (2D)</option>
+          <option>Sala 2 (2D)</option>
+          <option>Sala 3 (2D)</option>
+          <option>Sala 4 (2D)</option>
+          <option>Sala 5 (2D)</option>
+          <option>Sala 6 (3D)</option>
+          <option>Sala 7 IMAX</option>
+          <option>Sala 8 VIP</option>
+        </select>
+      </label>
+
+      <label>
+        Fecha
+        <input type="date" name="fecha" required value="2025-01-01"> <!--mensaje error-->
+      </label> <!-- valor inicial en la fecha -->
+
+      <label>
+        Horario de inicio
+        <select name="hora_inicio" required>
+          <option value="">Selecciona hora</option>
+          <option>10:00</option>
+          <option>12:30</option>
+          <option>15:00</option>
+          <option>17:30</option>
+          <option>20:00</option>
+          <option>22:30</option>
+        </select>
+      </label>
+
+      <label>
+        Horario de fin
+        <select name="hora_fin" required>
+          <option value="">Selecciona hora</option>
+          <option>11:50</option>
+          <option>14:20</option>
+          <option>16:50</option>
+          <option>19:20</option>
+          <option>21:50</option>
+          <option>00:20</option>
+        </select>
+      </label>
+
+      <label>
+        Nombre de contacto
+        <input type="text" name="nombre" required>
+      </label>
+
+      <label>
+        Email
+        <input type="email" name="email" required>
+      </label>
+
+      <label>
+        Teléfono
+        <input type="tel" name="telefono" required>
+      </label>
+
+      <label>
+        Observaciones
+        <textarea name="observaciones" rows="3" placeholder="detalles"></textarea>
+      </label>
+
+      <button type="submit" class="btn">Solicitar Reserva</button>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-container">
+
+      <div class="footer-column">
+        <h3>Cartelera</h3>
+        <ul>
+          <li><a href="#">Preventas</a></li>
+          <li><a href="#">Muestras y festivales</a></li>
+          <li><a href="#">Google Play</a></li>
+          <li><a href="#">Apple Store</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Legales</h3>
+        <ul>
+          <li><a href="#">Aviso de privacidad</a></li>
+          <li><a href="#">Términos y condiciones</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Políticas</h3>
+        <ul>
+          <li><a href="#">Código de integridad</a></li>
+          <li><a href="#">Política Anticorrupción</a></li>
+          <li><a href="#">Protección de Datos</a></li>
+          <li><a href="#">Diversidad e Inclusión</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>¿Quiénes somos?</h3>
+        <p>
+          Somos una empresa dedicada a brindar experiencias de cine inolvidables,
+          con calidad, comodidad e innovación. Somos el cine que busca ser líder
+          en la región, reconocido por su servicio y tecnología. Somos pasión por
+          el cine, compromiso con el cliente, innovación, inclusión e integridad.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 CineStar. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+</body>
+
+</html>
